@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="agenda.css" />
     <link href="https://fonts.googleapis.com/css2?family=Vibur&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 
 
@@ -14,13 +15,71 @@
 
     <header>
         <nav>
+            <ul id="menu">
 
+                <li>Hiver
+                    <ul>
+                        <li><a href="#">Décembre</a></li>
+                        <li><a href="#">Janvier</a></li>
+                        <li><a href="#">Février</a></li>
+                    </ul>
+                </li><li>Printemps
+                    <ul>
+                        <li><a href="#">Mars</a></li>
+                        <li><a href="#">Avril</a></li>
+                        <li><a href="#">Mai</a></li>
+                    </ul>
+                </li><li>Eté
+                    <ul>
+                        <li><a href="#">Juin</a></li>
+                        <li><a href="#">Juillet</a></li>
+                        <li><a href="#">Août</a></li>
+                    </ul>
+                </li><li>Automne
+                    <ul>
+                        <li><a href="#">Septembre</a></li>
+                        <li><a href="#sectionOctobre">Octobre</a></li>
+                        <li><a href="#">Novembre</a></li>
+                    </ul>
+                
+            </ul>
         </nav>
+
     </header>
 
     <main>
 
-        <section id="sectionOctobre">
+        <section class="sectionTitre">
+
+            <article class="titre octobre">
+                <h1>~ Octobre ~</h1>
+            </article>
+
+
+            <article id="semainier">
+                <div class="semaine">
+                    <a href="#sectionTable">40</a>
+                </div>
+
+                <div class="semaine">
+                    <a href="#sectionTable">41</a>
+                </div>
+
+                <div class="semaine">
+                    <a href="#sectionTable">42</a>
+                </div>
+
+                <div class="semaine">
+                    <a href="#sectionTable">43</a>
+                </div>
+
+                <div class="semaine">
+                    <a href="#sectionTable">44</a>
+                </div>
+
+            </article>
+
+
 
         </section>
 
@@ -28,13 +87,19 @@
         <section id="sectionTable">
             <table>
 
-                <tr></tr>
 
                 <tr class="jour">
-                    <th class="un">Lundi</th>
-                    <th class="deux">Mardi</th>
-                    <th class="trois">Mercredi</th>
-                    <th class="quatre">Jeudi</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                </tr>
+
+                <tr class="jour">
+                    <th>19</th>
+                    <th>20</th>
+                    <th>21</th>
+                    <th>22</th>
                 </tr>
 
                 <tr class="moment">
@@ -64,8 +129,8 @@
                 </tr>
 
 
-                <tr class="midi">
-                    <th colspan="3" class="nourriture">pause midi</th>
+                <tr>
+                    <th colspan="3" class="midi">pause midi</th>
                 </tr>
 
 
@@ -92,33 +157,37 @@
 
 
             </table>
-        </section>
-
-
-        <section>
+       
             <table>
 
-                
 
                 <tr class="jour">
-                    <th class="cinq">VENDREDI</th>
-                    <th class="six">SAMEDI</th>
-                    <th class="sept">DIMANCHE</th>
-                    <th class="huit">NOTES</th>
+                    <th>VENDREDI</th>
+                    <th>SAMEDI</th>
+                    <th>DIMANCHE</th>
+                    <th>NOTES</th>
                 </tr>
+
+                <tr class="jour">
+                    <th>23</th>
+                    <th>24</th>
+                    <th>25</th>
+                    <th>semaine 43</th>
+                </tr>
+
 
                 <tr class="moment">
                     <th class="nourriture">8h-9h</th>
                     <th class="corvée">matin</th>
                     <th class="libre">dimanche matin</th>
-                    <th></th>
+                    <th class="jour">ne pas oublier :</th>
                 </tr>
 
                 <tr>
                     <td class="act nourriture">Petit déjeuner sur le rooftop</td>
                     <td class="act corvée" rowspan="3">Ménage</td>
                     <td class="act libre">Grasse matinée</td>
-                    <td class="act jour" rowspan="8">Anniversaire de Lalali le 29 ! Prendre RDV pour des implants capillaires la semaine prochaine /!\ </td>
+                    <td class="act jour" rowspan="8">- Anniversaire de Lalali le 29 !<br /> - Prendre RDV pour des implants capillaires la semaine prochaine /!\ </td>
                 </tr>
 
                 <tr class="moment">
@@ -132,10 +201,10 @@
                 </tr>
 
 
-                <tr class="midi">
-                    <th class="nourriture">pause midi</th>
-                    <th class="libre"></th>
-                    <th class="libre"></th>
+                <tr>
+                    <th class="midi">pause midi</th>
+                    <th class="act libre">?</th>
+                    <th class="act libre">?</th>
                 </tr>
 
 
@@ -150,22 +219,16 @@
                     <td class="act libre" rowspan="3">Libéré-e, délivré-e !</td>
                     <td class="act nourriture">Thé et petits cookies avec la bande</td>
                     <td class="act nourriture" rowspan="3">Repas suivi d'une petite soirée bien sympathique</td>
-                   
-                </tr>
 
-                <tr class="moment">
-                    
                 </tr>
-
-                <tr>
-                   
-                </tr>
-
 
 
             </table>
         </section>
 
+        <section id="sectionBouton">
+            <a class="bouton" href="formulaire.html">Ajouter un événement</a>
+        </section>
     </main>
 
 

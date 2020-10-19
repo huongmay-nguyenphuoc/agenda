@@ -4,36 +4,159 @@
 }
 
 body {
-    font-family: 'Vibur', cursive;
     height: 100%;
+    width: 100%;
+    background-color: #E7E1CF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 
-section {
+/*NAV*/
+
+header {
+    background-color: #3E2E3B;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.5em;
+}
+
+#menu, #menu a {
+    color: #F9B50A;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3E2E3B;
+    
+}
+
+    #menu a {
+        background-color: inherit;
+        color: inherit;
+        transition: 0.4s;
+    }
+
+    #menu li, #menu li li {
+        position: relative;
+        display: inline-block;
+        width: 110px;
+        padding: 10px;
+        transition: 1s;
+        background-color: #3E2E3B;
+        transition: 0.4s;
+    }
+
+
+    #menu ul {
+        position: absolute;
+        top: 2em;
+        left: 0;
+        max-height: 0em;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 0 0 8px 8px;
+        transition: 1s;
+        background-color: #3E2E3B;
+    }
+
+#menu li:hover ul {
+    max-height: 13em;
+}
+
+
+    #menu li li:hover {
+        color: #3E2E3B;
+        background-color: #F9B50A;
+    }
+   
+
+
+    /*SECTION 1*/
+    .sectionTitre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 85vh;
+        background-size: 100%;
+        font-family: 'Fredericka the Great', cursive;
+    }
+
+.titre {
+    font-size: 7.5em;
+    background-size: 100%;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire {
+    background-image: url(images/bg-formulaire.jpg);
+    font-size: 4em;
+}
+
+.octobre {
+    background-image: url(images/bg-leaves.jpg);
+}
+
+#semainier {
+    display: flex;
+    width: 50%;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+
+.semaine a {
+    background-color: #3E2E3B;
+    border-radius: 50%;
+    padding: 15px;
+    text-decoration: none;
+    color: #F9B50A;
+    font-size: 1.7em;
+    transition: 0.7s;
+}
+
+    .semaine a:hover {
+        background-color: #F9B50A;
+        color: #3E2E3B;
+    }
+
+
+
+    /*SECTION 2*/
+
+    #sectionTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Vibur', cursive;
     padding: 20px;
 }
 
-
-/*SECTION 1*/
-
-#sectionOctobre {
-
-}
-
 table {
-    width: 50%;
+    width: 80%;
     border-collapse: collapse;
-    border: 1px solid grey;
+   
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 10px;
 }
 
 
 
 th, td {
-    border: 1px solid grey;
     text-align: center;
     width: 10%;
-    padding: 5px;
+    padding: 10px;
 }
 
 
@@ -44,29 +167,35 @@ th, td {
 }
 
 .act {
-    opacity: 0.9;
+    opacity: 0.7;
     transition: 0.7s;
     text-align: left;
+    padding-left: 15px;
 }
-
-    .act:hover {
-        opacity: 1;
-    }
 
 .moment th {
     text-align: right;
     border-bottom: 1px solid rgba(0,0,0,0);
     transition: 0.7s;
-    opacity: 0.7;
+    opacity: 0.6;
+    font-size: 0.7em;
+    color: #F9B50A;
+}
+
+.moment .libre {
+    color: #DD8009;
 }
     .moment th:hover {
         opacity: 1;
     }
 
 
-
-.libre {
+.act:hover {
+    opacity: 1;
+}
+    .libre {
     background-color: #F9B50A;
+    
 }
 
 .loisirs {
@@ -81,17 +210,43 @@ th, td {
     background-color: #733041;
 }
 .travail {
-    background-color: #3E2E3B;
+    background-color: #674A61;
 }
 
 .corvée {
-    background-color: #6F555F;
+    background-color: #936B74;
 }
 
 
-
-
-
-.jour {
+.jour, .midi {
     background-color: #3E2E3B;
+    color: #F9B50A;
 }
+
+
+
+/*SECTION*/
+
+#sectionBouton {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.bouton {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #3E2E3B;
+    color: #F9B50A;
+    transition: 0.7s;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.7em;
+}
+
+    .bouton:hover {
+        background-color: #F9B50A;
+        color: #3E2E3B;
+    }
+
+
