@@ -23,21 +23,18 @@ body {
     justify-content: space-around;
 }
 
-main {
-    position: relative;
-}
-
 #feuille {
     position: absolute;
     max-width: 10%;
     top: -100px;
     right: 50%;
     animation: feuilletombe 20s infinite;
-    z-index: 1;
+  
 }
 @keyframes feuilletombe {
     0% {
         top: -100px;
+        opacity: 0.5;
     }
 
     30% {
@@ -75,22 +72,23 @@ header {
     justify-content: end;
     font-family: 'Just Another Hand', cursive;
     font-size: 1.5em;
+    z-index: 1;
 }
 
-#menu, #menu a {
+.menu, .menu a {
     color: #F9B50A;
     text-decoration: none;
     text-align: center;
     background-color: #3E2E3B;
 }
 
-    #menu a {
+    .menu a {
         background-color: inherit;
         color: inherit;
         transition: 0.4s;
     }
 
-    #menu li, #menu li li {
+    .menu li, #menu li li {
         position: relative;
         display: inline-block;
         width: 110px;
@@ -101,7 +99,7 @@ header {
     }
 
 
-    #menu ul {
+    .menu ul {
         position: absolute;
         top: 2em;
         left: 0;
@@ -114,12 +112,12 @@ header {
         background-color: #3E2E3B;
     }
 
-    #menu li:hover ul {
+   .menu li:hover ul {
         max-height: 13em;
     }
 
 
-    #menu li li:hover {
+    .menu li li:hover {
         color: #3E2E3B;
         background-color: #F9B50A;
     }
@@ -136,6 +134,7 @@ header {
     background-size: 100%;
     background-position: center;
     font-family: 'Fredericka the Great', cursive;
+    position: relative;
 }
 
 .titre {
@@ -357,7 +356,7 @@ input, textarea, select, option {
     }
 
     input[type=submit] {
-        color: #3E2E3B;
+        color: rgba(62, 46, 59,0.3);
         border-radius: 8px;
         padding: 20px;
         font-size: 1.5em;
@@ -366,5 +365,6 @@ input, textarea, select, option {
     }
 
         input[type=submit]:hover {
-            border: 2px solid #3E2E3B;
+            border: 2px solid rgba(62, 46, 59, 0.3);
+            color: rgba(62, 46, 59, 1);
         }
