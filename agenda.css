@@ -1,4 +1,15 @@
-﻿* {
+﻿/*SOMMAIRE
+    1. General
+    2. Nav
+    3. Commun
+    4. Agenda
+    5. Formulaire
+*/
+
+
+/*GENERAL*/
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -10,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
 }
 
 /*NAV*/
@@ -30,7 +40,6 @@ header {
     text-decoration: none;
     text-align: center;
     background-color: #3E2E3B;
-    
 }
 
     #menu a {
@@ -63,44 +72,44 @@ header {
         background-color: #3E2E3B;
     }
 
-#menu li:hover ul {
-    max-height: 13em;
-}
+    #menu li:hover ul {
+        max-height: 13em;
+    }
 
 
     #menu li li:hover {
         color: #3E2E3B;
         background-color: #F9B50A;
     }
-   
 
 
-    /*SECTION 1*/
-    .sectionTitre {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 85vh;
-        background-size: 100%;
-        font-family: 'Fredericka the Great', cursive;
-    }
+/*COMMUN*/
+
+.sectionTitre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+    font-family: 'Fredericka the Great', cursive;
+}
 
 .titre {
     font-size: 7.5em;
     background-size: 100%;
     width: 100%;
-    height: 60%;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.formulaire {
-    background-image: url(images/bg-formulaire.jpg);
-    font-size: 4em;
-}
 
+/* AGENDA */
+
+/*SECTION 1*/
 .octobre {
     background-image: url(images/bg-leaves.jpg);
 }
@@ -112,7 +121,6 @@ header {
     justify-content: space-around;
     margin-bottom: 30px;
 }
-
 
 .semaine a {
     background-color: #3E2E3B;
@@ -131,9 +139,9 @@ header {
 
 
 
-    /*SECTION 2*/
+/*SECTION 2*/
 
-    #sectionTable {
+#sectionTable {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,12 +153,10 @@ header {
 table {
     width: 80%;
     border-collapse: collapse;
-   
     color: white;
     font-size: 1.5em;
     margin: 10px;
 }
-
 
 
 th, td {
@@ -185,17 +191,14 @@ th, td {
 .moment .libre {
     color: #DD8009;
 }
-    .moment th:hover {
-        opacity: 1;
-    }
 
 
-.act:hover {
+.act:hover, .moment th:hover {
     opacity: 1;
 }
-    .libre {
+
+.libre {
     background-color: #F9B50A;
-    
 }
 
 .loisirs {
@@ -209,6 +212,7 @@ th, td {
 .autre {
     background-color: #733041;
 }
+
 .travail {
     background-color: #674A61;
 }
@@ -217,7 +221,6 @@ th, td {
     background-color: #936B74;
 }
 
-
 .jour, .midi {
     background-color: #3E2E3B;
     color: #F9B50A;
@@ -225,7 +228,7 @@ th, td {
 
 
 
-/*SECTION*/
+/*SECTION 3*/
 
 #sectionBouton {
     display: flex;
@@ -250,3 +253,76 @@ th, td {
     }
 
 
+
+/*FORMULAIRE*/
+
+
+.formulaire {
+    background-image: url(images/bg-formulaire3.jpg);
+    font-size: 4em;
+    color: white;
+    height: 50%;
+}
+
+.articleFormulaire {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+form {
+    box-sizing: border-box;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Vibur', cursive;
+    font-size: 1.2em;
+    color: #3E2E3B;
+}
+
+.blocForm {
+    background-color: rgba(219, 220, 225, 0.3);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(62, 46, 59, 0.2);
+}
+
+
+    .blocForm div {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+input, textarea, select, option {
+    border: none;
+    background: none;
+    border-bottom: 2px solid rgba(62, 46, 59,0.2);
+    background-color: rgba(249, 181, 10, 0);
+    font-family: inherit;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+    input:focus, textarea:focus {
+        border-bottom: 2px solid rgba(62, 46, 59,0);
+        background-color: rgba(62, 46, 59,0.1);
+    }
+
+    input[type=submit] {
+        color: #3E2E3B;
+        border-radius: 8px;
+        padding: 20px;
+        font-size: 1.5em;
+        border: 2px solid rgba(0,0,0,0);
+        transition: 0.4s;
+    }
+
+        input[type=submit]:hover {
+            border: 2px solid #3E2E3B;
+        }

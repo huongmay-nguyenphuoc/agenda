@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 
 <html lang="fr">
+
 <head>
     <meta charset="utf-8" />
     <title>Agenda - Formulaire</title>
@@ -9,7 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+<!--HEADER-->
     <header>
         <nav>
             <ul id="menu">
@@ -42,7 +46,7 @@
                     Automne
                     <ul>
                         <li><a href="#">Septembre</a></li>
-                        <li><a href="#sectionOctobre">Octobre</a></li>
+                        <li><a href="agenda.html">Octobre</a></li>
                         <li><a href="#">Novembre</a></li>
                     </ul>
 
@@ -50,14 +54,81 @@
         </nav>
     </header>
 
+<!--MAIN-->
     <main>
-        <section class="sectionTitre">
 
+        <section class="sectionTitre">
+<!--article titre-->
             <article class="titre formulaire">
                 <h1>~ Ajouter un événement ~</h1>
             </article>
 
-            </section>
+
+<!--article formulaire-->
+            <article class="articleFormulaire">
+
+                <form>
+<!--Bloc1-->
+                    <div class="blocForm">
+
+                        <div>
+                            <label for="nom">Nom événement</label>
+                            <input type="text" id="nom" name="nom">
+                        </div>
+
+                        <div>
+                            <label for="cat">Catégorie</label>
+                            <select name="categorie" id="cat">
+                                <option value="loisirs">loisirs</option>
+                                <option value="nourriture">nourriture</option>
+                                <option value="travail">travail</option>
+                                <option value="corvée">corvée</option>
+                                <option value="autre">autre</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description"></textarea>
+                        </div>
+
+                    </div>
+
+
+<!--Bloc2-->
+                    <div class="blocForm">
+
+                        <div>
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" />
+                        </div>
+
+                        <div>
+                            <label for="heure">Heure début</label>
+                            <input type="time" id="heure" name="heure" />
+                        </div>
+
+                        <div>
+                            <label for="heurefin">Heure fin</label>
+                            <input type="time" id="heurefin" name="heurefin" />
+                        </div>
+
+                    </div>
+
+<!--Bloc3-->
+                    <div class="blocForm">
+
+                        <input type="submit" value="Ajouter l'événement" />
+
+                    </div>
+
+                </form>
+
+            </article>
+
+        </section>
+
+
 
     </main>
 
