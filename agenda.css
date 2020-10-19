@@ -23,6 +23,48 @@ body {
     justify-content: space-around;
 }
 
+main {
+    position: relative;
+}
+
+#feuille {
+    position: absolute;
+    max-width: 10%;
+    top: -100px;
+    right: 50%;
+    animation: feuilletombe 20s infinite;
+    z-index: 1;
+}
+@keyframes feuilletombe {
+    0% {
+        top: -100px;
+    }
+
+    30% {
+        right: 60%;
+        transform: rotate(200deg);
+    }
+
+
+    60% {
+        transform: skewY(20deg);
+        transform: rotate(120deg);
+    }
+
+    80% {
+        transform: skewY(0deg);
+        transform: rotate(40deg);
+    }
+
+
+    100% {
+        top: 1500px;
+        opacity: 0;
+        right: 30%;
+        transform: rotate(20deg);
+    }
+}
+
 /*NAV*/
 
 header {
